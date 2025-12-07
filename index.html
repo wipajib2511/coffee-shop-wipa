@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>coffee shop wipa</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sriracha&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              100: '#582f0e',
+              200: '#7f4f24',
+              300: '#936639',
+              400: '#a68a64',
+              500: '#b6ad90',
+              600: '#c2c5aa',
+              700: '#a4ac86',
+              800: '#656d4a',
+              900: '#414833',
+              1000:'#333d29',
+            },
+            warning: {
+              warn: '#ffff00',
+              error: '#ff0000',
+              serious: '#ff4433',
+            },
+            meaning: {
+                2001:'#eff1ed',
+                2002:'#373d20',
+                2003:'#717744',
+                2004:'#bcbd8b',
+                2005:'#766153',
+            }
+          },
+          fontFamily: {
+                title: ['Sriracha', 'cursive'],
+                content: ['IBM Plex Sans Thai', 'sans-serif'],
+                nunito: ['Nunito', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-primary-500 min-h-screen font-content">
+
+  <header class="bg-primary-1000 shadow-md">
+    <div class="container mx-auto p-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="logo.jpg" alt="Logo" width="80">
+        <span class="text-2xl md:text-3xl font-title text-primary-500 font-bold">🌿 Welcome to our coffee shop!</span>
+      </div>
+
+      <nav class="flex space-x-4">
+        <a href="#" class="text-primary-600 hover:text-indigo-600">หน้าหลัก</a>
+        <a href="#" class="text-primary-500 hover:text-indigo-600">สินค้า</a>
+        <a href="#" class="bg-indigo-600 text-white px-3 py-1 rounded-md hover:bg-indigo-600">ติดต่อเรา</a>
+      </nav>
+    </div>
+  </header>
+
+<div class="flex flex-col md:flex-row justify-center items-center p-0 m-0">
+  <div class="w-full md:w-1/3 h-80 flex items-center justify-center bg-primary-500 rounded-lg shadow-lg">
+    <img src="simplyhappen_take_a_breath013.jpg" alt="simplyhappen_take_a_breath013" class="max-h-full object-contain rounded-md">
+  </div>
+    <div class="w-full md:w-1/3 h-80 flex items-center justify-center bg-primary-500 rounded-lg shadow-lg">
+    <img src="LINE_ALBUM_take_a_breath_240530_31.jpg" alt="LINE_ALBUM_take_a_breath_240530_31" class="max-h-full object-contain rounded-md">
+  </div>
+    <div class="w-full md:w-1/3 h-80 flex items-center justify-center bg-primary-500 rounded-lg shadow-lg">
+    <img src="menu.jpg" alt="menu" class="max-h-full object-contain rounded-md">
+  </div>
+</div>
+ 
+  <main class="container mx-auto p-4 grid grid-cols-1 md:grid-cols-4 gap-6 mt-4">
+     
+   <aside class="bg-primary-600 p-6 rounded-lg shadow-lg h-full hidden md:block w-[250px]">
+  <h3 class="text-xl font-semibold mb-3 border-b pb-2">เมนูหลัก</h3>
+  <ul class="space-y-2">
+    <li><a href="#" class="text-indigo-600 font-medium hover:underline">📈สินค้าขายดี</a></li>
+    <li><a href="#" class="text-gray-600 hover:text-indigo-600">🛍️สินค้า</a></li>
+    <li><a href="#" class="text-gray-600 hover:text-indigo-600">🎁โปรโมชั่นประจำเดือน</a></li>
+    <li><a href="#" class="text-gray-600 hover:text-indigo-600">⭐สิทธิพิเศษ</a></li>
+  </ul>
+</aside>
+
+      <section class="md:col-span-3 flex flex-wrap justify-between gap-6">
+
+      <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="cappuccino.jpg" alt="cappuccino" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h5 class="text-3xl font-nunito">Cappuccino</h5>
+          <h5 class="text-2xl font-content">ราคา 85 บาท</h5>
+          <button class="mt-4 bg-blue-500 hover:bg-orange-600 text-white py-2 px-4 rounded w-full ">สั่งซื้อ</button>
+        </div>
+      </div>
+      <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="americano.jpg" alt="americano" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h5 class="text-3xl font-nunito">Americano</h5>
+          <h5 class="text-2xl font-content">ราคา 95 บาท</h5>
+          <button class="mt-4 bg-blue-500 hover:bg-orange-600 text-white py-2 px-4 rounded w-full ">สั่งซื้อ</button>
+        </div>
+      </div>
+    <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="latte.jpg" alt="latte" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h5 class="text-3xl font-nunito">Latte</h5>
+          <h5 class="text-2xl font-content">ราคา 90 บาท</h5>
+          <button class="mt-4 bg-blue-500 hover:bg-orange-600 text-white py-2 px-4 rounded w-full ">สั่งซื้อ</button>
+        </div>
+      </div>
+    <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="mocha.jpg" alt="mocha" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h5 class="text-3xl font-nunito">Mocha</h5>
+          <h5 class="text-2xl font-content">ราคา 90 บาท</h5>
+          <button class="mt-4 bg-blue-500 hover:bg-orange-600 text-white py-2 px-4 rounded w-full ">สั่งซื้อ</button>
+        </div>
+      </div>
+    <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="iced coffee.jpg" alt="iced coffee" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h5 class="text-3xl font-nunito">Iced Coffee</h5>
+          <h5 class="text-2xl font-content">ราคา 90 บาท</h5>
+         <button class="mt-4 bg-blue-500 hover:bg-orange-600 text-white py-2 px-4 rounded w-full ">สั่งซื้อ</button>
+        </div>
+      </div>
+    <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="pudding.jpg" alt="pudding" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h5 class="text-3xl font-nunito">Pudding</h5>
+          <h5 class="text-2xl font-content">ราคา 65 บาท</h5>
+         <button class="mt-4 bg-blue-500 hover:bg-orange-600 text-white py-2 px-4 rounded w-full ">สั่งซื้อ</button>
+        </div>
+      </div>
+    <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="strawberry.jpg" alt="strawberry" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h5 class="text-3xl font-nunito">Strawberry Cake</h5>
+          <h5 class="text-2xl font-content">ราคา 79 บาท</h5>
+         <button class="mt-4 bg-blue-500 hover:bg-orange-600 text-white py-2 px-4 rounded w-full ">สั่งซื้อ</button>
+        </div>
+      </div>
+    <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="blueberry.jpg" alt="blueberry" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h5 class="text-3xl font-nunito">Blueberry Cake</h5>
+          <h5 class="text-2xl font-content">ราคา 79 บาท</h5>
+         <button class="mt-4 bg-blue-500 hover:bg-orange-600 text-white py-2 px-4 rounded w-full ">สั่งซื้อ</button>
+        </div>
+      </div>
+    <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="bunny.jpg" alt="bunny" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h5 class="text-3xl font-nunito">Bunny Cupcake</h5>
+          <h5 class="text-2xl font-content">ราคา 59 บาท</h5>
+         <button class="mt-4 bg-blue-500 hover:bg-orange-600 text-white py-2 px-4 rounded w-full ">สั่งซื้อ</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+   <section class="bg-warning-warngr adient-to-r from-amber-400 to-500 text-black text-center py-4 text-2xl font-title tracking-wide shadow-lg">
+    <p>🎉 โปรโมชั่นพิเศษ! ซื้อครบ 200 บาท รับฟรีพุดดิ้ง 1 ถ้วย 🎁</p>
+    <p>⏰ Happy Hour! ทุกวันจันทร์–ศุกร์ เวลา 14.00-16.00 น. เครื่องดื่มลด 20% ☕</p>
+    <p>👭 ชวนเพื่อนมาด้วยกัน! ซื้อ 2 แก้ว แถมฟรีอีก 1 แก้วทันที 🎉</p>
+  </section>
+
+  <footer class="bg-meaning-2003 p-6 text-white shadow-lg mt-6 mx-4">
+  <h3 class="text-xl font-title mb-2 md:text-3xl text-center">COFFEE SHOP By Jj</h3>
+  <p class="text-gray-100 font-conten text-center">ที่อยู่ xxx จ.นครปฐม 73000</p>
+  <p class="text-gray-100 font-content text-center">โทร.034-2700000-1</p>
+  <p class="text-gray-100 font-nunito text-center">Facebook:COFFEE SHOP By Jj</p>
+  <p class="text-gray-100 font-nunito text-center">Line:@COFFEEByJ11j28</p>
+</footer>
+
+</body>
+</html>
